@@ -1,21 +1,16 @@
 <template>
 <main>  
     <div id="topline"></div>
-    <div id="topbox"></div>
+    <router-link to="/cleanyourspace">
+    <div id="topbox"></div></router-link>
      <div id="plakat"> 
-         <div id="baktusser">
-             <img src="../assets/baktusser.svg" alt="">
-         </div>
     </div> 
-</main>
-   
-
-  
+</main>  
 </template>
 
 <script>
     export default {
-        name: "vaskH",
+        name: "Physicalcontact",
     }
 </script>
 
@@ -37,58 +32,21 @@ main {
 #topbox {
     height: 250px;
     width: 100%;
-    background-image: url("../assets/no1.1.svg");
+    background-image: url("../assets/NO3.svg");
     background-repeat: no-repeat;
     background-position: 90% 20%;
     background-size: 250px;
+    margin-bottom: 5%;
 }
 
 #plakat {
     height: 2000px;
     width: 100%;
-    background-image: url("../assets/vaskhænder.png");
+    background-image: url("../assets/datingguide.png");
     background-color: #D5EDF7;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-#baktusser {
-    width: 100%;
-    height: 800px;
-    display: flex;
-    align-items: baseline;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 800px;
-    width: 35%;
-    animation: vibrate-1 1s infinite both;
-    position: relative;
-}
-
-@keyframes vibrate-1 {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
-  }
-  100% {
-    transform: translate(0);
-  }
 }
 
 @media only screen 
@@ -112,7 +70,7 @@ main {
 #topbox {
     height: 100px;
     width: 100%;
-    background-image: url("../assets/no1.1.svg");
+    background-image: url("../assets/NO3.svg");
     background-repeat: no-repeat;
     background-position: 90% 20%;
     background-size: 100px;
@@ -121,7 +79,7 @@ main {
 #plakat {
     height: 600px;
     width: 100%;
-    background-image: url("../assets/vaskhænder.png");
+    background-image: url("../assets/datingguide.png");
     background-color: #D5EDF7;
     background-size: contain;
     background-repeat: no-repeat;
@@ -141,12 +99,6 @@ img {
     margin-right: auto;
     margin-top: 635px;
     width: 50%;
-    animation: vibrate-1 1s infinite both;
-    position: relative;
 }
     }
-
-
-
-
 </style>

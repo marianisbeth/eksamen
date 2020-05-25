@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Washhands from '../views/vaskhænder.vue'
 import Keepdistance from '../views/holdafstand.vue'
+import Physicalcontact from '../views/fysiskkontakt.vue'
+import Cleanyourspace from '../views/rengøring.vue'
+import Coughandsneeze from '../views/nysoghost.vue'
 
 Vue.use(VueRouter)
 
@@ -29,7 +32,23 @@ Vue.use(VueRouter)
     path: '/keepdistance',
     name: 'keepdistance',
     component: Keepdistance,
-  }
+  },
+  {
+    path: '/physicalcontact',
+    name: 'physicalcontact',
+    component: Physicalcontact,
+  },
+  {
+  path: '/cleanyourspace',
+  name: 'cleanyourspace',
+  component: Cleanyourspace,
+},
+{
+  path: '/coughandsneeze',
+  name: '/coughandsneeze',
+  component: Coughandsneeze,
+}
+
 ]
 
 const router = new VueRouter({
